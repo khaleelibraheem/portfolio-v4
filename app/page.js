@@ -56,7 +56,7 @@ const experience = [
     year: "2025–Now",
     company: "Frontend Developer at MarginPlus",
     description:
-      "Frontend Developer responsible for building and maintaining user-facing interfaces for the investment platform.",
+      " Building and maintaining user-friendly web interfaces for an agribusiness investment platform, focusing on performance and scalability.",
   },
   {
     year: "2023–2024",
@@ -93,7 +93,6 @@ const socials = [
     preview: "/twitter.png",
   },
 ];
-
 
 export default function LandingPage() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -212,7 +211,7 @@ export default function LandingPage() {
             className="text-[30px] tracking-tight font-bold text-gray12"
             variants={fadeUp}
           >
-            Career
+            Experience
           </motion.h2>
 
           <motion.div className="mt-7 flex flex-col gap-8" variants={stagger}>
@@ -220,9 +219,9 @@ export default function LandingPage() {
               <motion.div
                 key={item.company}
                 variants={fadeUp}
-                className="flex flex-col sm:flex-row gap-1 sm:gap-5 pb-2 sm:pb-6"
+                className="flex flex-col sm:flex-row gap-1 items-start sm:gap-5 pb-2 sm:pb-6"
               >
-                <div className="sm:w-[80px]">
+                <div className="sm:w-[20%]">
                   <h4 className="text-[13px] text-gray10">{item.year}</h4>
                 </div>
 
@@ -318,9 +317,7 @@ export default function LandingPage() {
                     >
                       <div className="flex items-center gap-1">
                         {social.icon}
-                        <p className="text-[13px] text-gray12">
-                          {social.name}
-                        </p>
+                        <p className="text-[13px] text-gray12">{social.name}</p>
                       </div>
                     </Link>
                   </div>
