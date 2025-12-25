@@ -303,6 +303,7 @@ export default function LandingPage() {
                             alt={social.name}
                             width={160}
                             height={96}
+                            priority
                             className="w-full h-full object-cover opacity-80"
                           />
                           <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-[#1a1a1a] border-r border-b border-[#2a2a2a] rotate-45" />
