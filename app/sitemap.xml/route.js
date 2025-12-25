@@ -1,25 +1,15 @@
 export async function GET() {
+  const lastModified = new Date().toISOString().split("T")[0];
+
   const body = `<?xml version="1.0" encoding="UTF-8"?>
-  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-      <loc>https://khaleelalhaji.info/</loc>
-      <lastmod>2025-06-13</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>1.0</priority>
-    </url>
-    <url>
-      <loc>https://khaleelalhaji.info/projects</loc>
-      <lastmod>2025-06-13</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.9</priority>
-    </url>
-    <url>
-      <loc>https://khaleelalhaji.info/resume</loc>
-      <lastmod>2025-06-13</lastmod>
-      <changefreq>yearly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  </urlset>`;
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://khaleelalhaji.info/</loc>
+    <lastmod>${lastModified}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>`;
 
   return new Response(body, {
     headers: {

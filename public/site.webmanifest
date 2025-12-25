@@ -1,11 +1,11 @@
 {
-  "name": "Khaleel Alhaji Portfolio",
+  "name": "Khaleel Alhaji — Frontend Engineer",
   "short_name": "Khaleel",
-  "description": "Portfolio of Khaleel Alhaji — Front-End Developer from Nigeria based in India.",
+  "description": "Personal website of Khaleel Alhaji, a frontend engineer designing and building clean, fast, and reliable web interfaces.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "background_color": "#161616",
+  "theme_color": "#161616",
   "icons": [
     {
       "src": "/apple-touch-icon.png",
