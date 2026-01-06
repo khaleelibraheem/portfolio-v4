@@ -32,6 +32,12 @@ const stagger = {
 
 const projects = [
   {
+    name: "kambit",
+    description:
+      "A premier fintech platform for instant crypto trading in Nigeria. I built an interface for buying and selling BTC, USDT, and other assets, focusing on real-time market rates and seamless Naira settlements.",
+    url: "https://kambit.vercel.app",
+  },
+  {
     name: "marginplus",
     description:
       "A digital investment platform connecting users with agribusiness opportunities across Africa. I focused on building clear, performant interfaces for tracking investments, returns, and investment cycles.",
